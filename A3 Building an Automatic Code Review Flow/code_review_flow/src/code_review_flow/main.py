@@ -130,7 +130,7 @@ class PRCodeReviewFlow(Flow[ReviewState]):
             "confidence (integer 0-100 score of the code changes)\n"
             "findings (string, key findings from both analysis)\n"
             "recommendations (string, any additional recommendations and observations)\n"
-            "this is the pr content {self.state.pr_content}"
+            f"this is the pr content {self.state.pr_content}"
             )
         ### END CODE HERE ###
 
