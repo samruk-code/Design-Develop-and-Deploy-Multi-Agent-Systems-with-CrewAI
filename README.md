@@ -70,7 +70,7 @@ This course covers the full lifecycle of production-ready multi-agent systems: f
 | [Pydantic](https://docs.pydantic.dev/) | Structured output validation |
 | Python / Jupyter Notebooks | Development environment |
 
----
+----
 
 ## Course
 
