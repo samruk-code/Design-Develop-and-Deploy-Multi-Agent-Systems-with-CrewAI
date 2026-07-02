@@ -12,11 +12,13 @@ analyze_code_quality:
 
 review_security:
   description: >
-    1. Review the findings from both the code quality and security analyses.
-    2. Determine if the pull request can be automatically approved based on these findings.
-    3. If approval is not possible, decide whether to request specific changes from the developer or escalate to human review.
-    4. Provide a clear explanation of your decision and any required next steps.
-    PR content: 
+    1. Examine the code changes (PR) for potential security vulnerabilities.
+    2. Identify any security issues such as injection risks, authentication problems, or data exposure.
+    3. Determine the risk level (high, medium, low) for each security concern.
+    4. Decide if any security issues are severe enough to block automatic approval.
+    Use the SerperDevTool to find the most relevant security best practices from OWASP
+    and pass the URLs to the ScrapeWebsiteTool to get detailed information.
+    PR content:
     {file_content}
   expected_output: >
     A JSON with keys: 
